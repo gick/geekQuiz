@@ -1,0 +1,30 @@
+{
+  "name": "geekQuiz",
+  "version": "1.0.0",
+  "description": "A quizz for geeks",
+  "author": "gick",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0",
+    "animate.css": "^3.7.2",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "nuxt": "^2.0.0",
+    "nuxt-buefy": "^0.3.2",
+    "nuxt-material-design-icons": "^1.0.4",
+    "nuxt-webfontloader": "^1.1.0",
+    "pretty-checkbox": "^3.0.3",
+    "vue-circular-count-down-timer": "github:gick/vue-circular-count-down-timer"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

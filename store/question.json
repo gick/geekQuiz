@@ -1,0 +1,995 @@
+[
+  {
+    "q": "What is the domain of this site?",
+    "r": [
+      {
+        "label": "be-random.eu",
+        "correct": true,
+        "gain": 5,
+        "loss": 5
+      },
+      {
+        "label": "eb-random.eu",
+        "correct": false,
+        "gain": 0,
+        "loss": 15
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "Which is a network protocol?",
+    "r": [
+      {
+        "label": "xkcd",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "ftp",
+        "correct": true,
+        "gain": 5,
+        "loss": 5
+      },
+      {
+        "label": "smbc",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "What about <a class=\"math\">a = 5 &#215; 3 + 2 - 7</a> ?",
+    "r": [
+      {
+        "label": "<a class=\"math\">a > 7</a>",
+        "correct": true,
+        "gain": 6,
+        "loss": 5
+      },
+      {
+        "label": "<a class=\"math\">a < 5</a>",
+        "correct": false,
+        "gain": 1,
+        "loss": 10
+      },
+      {
+        "label": "<a class=\"math\">a = 9</a>",
+        "correct": false,
+        "gain": 1,
+        "loss": 8
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "Which are corrects?",
+    "r": [
+      {
+        "label": "<a class=\"math\">false &rArr; false</a>",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      },
+      {
+        "label": "<a class=\"math\">true &rArr; false &and; true</a>",
+        "correct": true,
+        "gain": 5,
+        "loss": 3
+      },
+      {
+        "label": "<a class=\"math\">true &rArr; true &or; false</a>",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "Which one contributed to computer science?",
+    "r": [
+      {
+        "label": "Noam Chomsky",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      },
+      {
+        "label": "Alan Turing",
+        "correct": true,
+        "gain": 1,
+        "loss": 10
+      },
+      {
+        "label": "Ana Lovelace",
+        "correct": true,
+        "gain": 3,
+        "loss": 8
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "How do you write jaberwoky in reverse?",
+    "r": [
+      {
+        "label": "ykowerbaj",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "ykowrebaj",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      },
+      {
+        "label": "yokwrebaj",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "Which one are JavaScript frameworks?",
+    "r": [
+      {
+        "label": "Vue",
+        "correct": true,
+        "gain": 2,
+        "loss": 5
+      },
+      {
+        "label": "Svelte",
+        "correct": true,
+        "gain": 2,
+        "loss": 3
+      },
+      {
+        "label": "Kassel",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "Which are human languages?",
+    "r": [
+      {
+        "label": "toki pona",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      },
+      {
+        "label": "Esperanto",
+        "correct": true,
+        "gain": 1,
+        "loss": 10
+      },
+      {
+        "label": "logban",
+        "correct": false,
+        "gain": 4,
+        "loss": 5
+      },
+      {
+        "label": "French",
+        "correct": true,
+        "gain": 3,
+        "loss": 15
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "How many time the letter <i>e</i> appear in this sentence?",
+    "r": [
+      {
+        "label": "8",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "9",
+        "correct": true,
+        "gain": 4,
+        "loss": 5
+      },
+      {
+        "label": "10",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "How many eyes in a group of two human males and six female cyclope?",
+    "r": [
+      {
+        "label": "8",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "10",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      },
+      {
+        "label": "11",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "How many vowel in this really unnecessary long sentence?",
+    "r": [
+      {
+        "label": "17",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "18",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "19",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "What metal was a main resource in Command & Conquer?",
+    "r": [
+      {
+        "label": "Titanium",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "Tiberium",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      },
+      {
+        "label": "Steel",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "Two Iranians and three Afghans makes",
+    "r": [
+      {
+        "label": "Five Arabs",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "Three Persians and two Arabs",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "Five Persians",
+        "correct": true,
+        "gain": 10,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "Which ones are anarchists?",
+    "r": [
+      {
+        "label": "Marx",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "Bakounine",
+        "correct": true,
+        "gain": 7,
+        "loss": 5
+      },
+      {
+        "label": "Kroptkine",
+        "correct": true,
+        "gain": 7,
+        "loss": 5
+      },
+      {
+        "label": "Keynes",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "Chomsky",
+        "correct": true,
+        "gain": 5,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "<i>Plato</i> had a bad case of bean phobia and was reported to have bite a snake to death",
+    "r": [
+      {
+        "label": "That's true",
+        "correct": true,
+        "gain": 10,
+        "loss": 5
+      },
+      {
+        "label": "Nonsense",
+        "correct": false,
+        "gain": 1,
+        "loss": 7
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "A <i>Dirac</i> is",
+    "r": [
+      {
+        "label": "A dead scientist",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      },
+      {
+        "label": "A mathematical object",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      },
+      {
+        "label": "A unit of measure of words per days",
+        "correct": true,
+        "gain": 3,
+        "loss": 5
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "How many times a vowel follows at least two consonants in this question? ",
+    "r": [
+      {
+        "label": "4",
+        "correct": false,
+        "gain": 1,
+        "loss": 7
+      },
+      {
+        "label": "5",
+        "correct": true,
+        "gain": 7,
+        "loss": 5
+      },
+      {
+        "label": "6",
+        "correct": false,
+        "gain": 1,
+        "loss": 7
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "The set containing all sets which doesn't contains themselves contains itself ",
+    "r": [
+      {
+        "label": "Is a logical paradox",
+        "correct": true,
+        "gain": 5,
+        "loss": 3
+      },
+      {
+        "label": "Is a joke from Russel to Frege",
+        "correct": true,
+        "gain": 4,
+        "loss": 1
+      },
+      {
+        "label": "Is comparable to a barber somewhat",
+        "correct": true,
+        "gain": 4,
+        "loss": 1
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "The sentence : <blockquote class=\"quote\"> Everyone, as a member of society, has the right to social security and is entitled to realization, through national effort and international co-operation and in accordance with the organization and resources of each State, of the economic, social and cultural rights indispensable for his dignity and the free development of his personality </blockquote>",
+    "r": [
+      {
+        "label": "Comes from the Communist Manifesto",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "Comes from the Geneva Convention",
+        "correct": false,
+        "gain": 1,
+        "loss": 4
+      },
+      {
+        "label": "Comes from the Universal declaration of human right",
+        "correct": true,
+        "gain": 5,
+        "loss": 1
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "Neoclassical economy is rooted on",
+    "r": [
+      {
+        "label": "The principle that each individual has full relevant information",
+        "correct": true,
+        "gain": 5,
+        "loss": 8
+      },
+      {
+        "label": "The principle that each individual act rationally ",
+        "correct": true,
+        "gain": 5,
+        "loss": 6
+      },
+      {
+        "label": "The principle that each individual has access to a given amount of money",
+        "correct": false,
+        "gain": 3,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "Making quiz can be quite boring",
+    "r": [
+      {
+        "label": "True",
+        "correct": true,
+        "gain": 8,
+        "loss": 5
+      },
+      {
+        "label": "False",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "Which of these sentence are true about Gnosticism? ",
+    "r": [
+      {
+        "label": "It is the opposite of Agnosticism",
+        "correct": false,
+        "gain": 1,
+        "loss": 7
+      },
+      {
+        "label": "It is based on the idea that God is actually bad",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "It is based on the idea that God is actually good",
+        "correct": true,
+        "gain": 5,
+        "loss": 1
+      },
+      {
+        "label": "It postulates the existence of a Demiurge ",
+        "correct": true,
+        "gain": 5,
+        "loss": 2
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "What is the ip of this website?",
+    "r": [
+      {
+        "label": "192.162.1.1",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "169.45.2.0",
+        "correct": false,
+        "gain": 2,
+        "loss": 5
+      },
+      {
+        "label": "127.0.0.1",
+        "correct": false,
+        "gain": 2,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "The first important article that disproved homeopathy grounding was published in ",
+    "r": [
+      {
+        "label": "Nature",
+        "correct": true,
+        "gain": 6,
+        "loss": 2
+      },
+      {
+        "label": "International Journal of Chemistry and Stuff",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "Proceedings of the 11th conference about water  ",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "Fermat's conjecture states that :",
+    "r": [
+      {
+        "label": "For <a class=\"math\">n > 1</a>, there are no integers such as <a class=\"math\"> a <sup>n</sup> + b <sup>n</sup> = c <sup>n</sup></a> ",
+        "correct": false,
+        "gain": 2,
+        "loss": 3
+      },
+      {
+        "label": "For <a class=\"math\">n > 2</a>, there are no integers such as <a class=\"math\"> a <sup>n</sup> + b <sup>n</sup> = c <sup>n</sup></a> ",
+        "correct": true,
+        "gain": 5,
+        "loss": 2
+      },
+      {
+        "label": "For <a class=\"math\">n > 2</a>, there is a unique solution to <a class=\"math\"> a <sup>n</sup> + b <sup>n</sup> = c <sup>n</sup></a> ",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "Which are valid JavaScript expressions?",
+    "r": [
+      {
+        "label": "<pre class=\"code\">a=>b=>c=>d=>a</pre>",
+        "correct": true,
+        "gain": 5,
+        "loss": 2
+      },
+      {
+        "label": "<pre class=\"code\">a=>b=>c=>{d=>e}=>a</pre>",
+        "correct": false,
+        "gain": 1,
+        "loss": 7
+      },
+      {
+        "label": "<pre class=\"code\">void function(){}()</pre>",
+        "correct": true,
+        "gain": 5,
+        "loss": 1
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "A <i>Tsumego</i> is :",
+    "r": [
+      {
+        "label": "A Japanese dish",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "A Go problem",
+        "correct": false,
+        "gain": 5,
+        "loss": 1
+      },
+      {
+        "label": "A life and death problem",
+        "correct": true,
+        "gain": 7,
+        "loss": 5
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "Which of these bash commands have an unusual syntax?",
+    "r": [
+      {
+        "label": "grep",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "dd",
+        "correct": true,
+        "gain": 5,
+        "loss": 7
+      },
+      {
+        "label": "ps",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "Modern representative systems take root in the work of ",
+    "r": [
+      {
+        "label": "Jean-Jacque Rousseau",
+        "correct": false,
+        "gain": 2,
+        "loss": 5
+      },
+      {
+        "label": "The abbé Sieyès",
+        "correct": true,
+        "gain": 10,
+        "loss": 5
+      },
+      {
+        "label": "Auguste Comte",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "Which of the following is not a package manager?",
+    "r": [
+      {
+        "label": "Bower",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "npm",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "yarn",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "Yeoman",
+        "correct": true,
+        "gain": 7,
+        "loss": 9
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "<a class=\"math\">N = R <sub>*</sub> &middot; f <sub>p</sub> &middot; n <sub>e</sub> &middot; f <sub>l</sub> &middot; f <sub>i</sub> &middot; f <sub>c<sub> &middot; L</a>",
+    "r": [
+      {
+        "label": "Is about aliens",
+        "correct": true,
+        "gain": 8,
+        "loss": 5
+      },
+      {
+        "label": "Is Drake equation",
+        "correct": true,
+        "gain": 8,
+        "loss": 5
+      },
+      {
+        "label": "Is about economy",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "Is Keynes second Lemma",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "According to Noam Chomsky",
+    "r": [
+      {
+        "label": "Being optimistic is a moral duty",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "Being optimistic is logically coherent",
+        "correct": true,
+        "gain": 5,
+        "loss": 1
+      },
+      {
+        "label": "Being pessimistic is logically coherent",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "Being pessimistic is a moral duty",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "How many farthings make a shilling?",
+    "r": [
+      {
+        "label": "4",
+        "correct": true,
+        "gain": 5,
+        "loss": 5
+      },
+      {
+        "label": "5",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "6",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "The Labour Day root is",
+    "r": [
+      {
+        "label": "A biblical verse",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "An agreement about regulation of working hour",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "A riot of wage workers",
+        "correct": true,
+        "gain": 6,
+        "loss": 2
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "Aleph is",
+    "r": [
+      {
+        "label": "A short novel",
+        "correct": true,
+        "gain": 6,
+        "loss": 10
+      },
+      {
+        "label": "The first letter of Hebrew alphabet",
+        "correct": true,
+        "gain": 6,
+        "loss": 5
+      },
+      {
+        "label": "A notation to compare the size of infinite sets",
+        "correct": true,
+        "gain": 6,
+        "loss": 5
+      }
+    ],
+    "difficulty": 2,
+    "done": false
+  },
+  {
+    "q": "What is the sum of integer from 1 to 10?",
+    "r": [
+      {
+        "label": "45",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "55",
+        "correct": true,
+        "gain": 3,
+        "loss": 1
+      },
+      {
+        "label": "65",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "The human female is the only mammal whose breast stay generous apart from pregnancy and lactation",
+    "r": [
+      {
+        "label": "This is true",
+        "correct": true,
+        "gain": 4,
+        "loss": 5
+      },
+      {
+        "label": "This is false",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "Professor emeritus John Trinkaus",
+    "r": [
+      {
+        "label": "Is really pissed of",
+        "correct": true,
+        "gain": 5,
+        "loss": 1
+      },
+      {
+        "label": "Published about the number of items people brings in express lines in supermarket ",
+        "correct": true,
+        "gain": 5,
+        "loss": 1
+      },
+      {
+        "label": "Strongly suggest that bad habits are spreading with time",
+        "correct": true,
+        "gain": 5,
+        "loss": 1
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "How many letter are there in this sentence, including punctuation sign?",
+    "r": [
+      {
+        "label": "62",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "61",
+        "correct": true,
+        "gain": 6,
+        "loss": 1
+      },
+      {
+        "label": "63",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  }
+]

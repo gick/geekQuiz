@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": 
+    {
+      "type": "object",
+      "properties": {
+        "q": {
+          "type": "string"
+        },
+        "r": {
+          "type": "array",
+          "items": 
+            {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "correct": {
+                  "type": "boolean",
+                  "default" : false
+                },
+                "gain": {
+                  "type": "integer",
+                  "default" : 3
+                },
+                "loss": {
+                  "type": "integer",
+                  "default" : 5
+                }
+              },
+              "required": [
+                "label",
+                "correct",
+                "gain",
+                "loss"
+              ]
+            }
+          
+        },
+        "difficulty": {
+          "type": "integer"
+        },
+        "done": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "q",
+        "r",
+        "difficulty",
+        "done"
+      ]
+    }
+  
+}
