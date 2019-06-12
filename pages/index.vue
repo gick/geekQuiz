@@ -127,7 +127,6 @@ export default {
       if (diff > 2) {
         diff = 2;
       }
-      this.$store.state.difficulty = diff;
       return diff;
     }
   },
@@ -137,6 +136,7 @@ export default {
       this.shuffle();
     },
     newRun() {
+      this.$axios.post('/api/start')
       this.restart();
       this.showEnd = false;
       this.started = true;
@@ -144,6 +144,7 @@ export default {
       this.$refs.countdown.resetTime(30);
     },
     firstRun() {
+      this.$axios.post('/api/start')
       this.started = true;
       this.$refs.countdown.resetTime(30);
       this.$refs.countdown.start()

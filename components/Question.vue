@@ -38,6 +38,7 @@ export default {
   },
   methods:{
     checkScore(){
+      this.$axios.post('/api/question',{question:this.question})
       let gain=0
       let loss=0
       for(let resp of this.question.r){

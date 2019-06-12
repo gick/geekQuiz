@@ -4,7 +4,9 @@ module.exports = {
   /*
   ** Headers of the page
   */
-
+ proxy:{
+  '/api/*':'http://localhost:8000'
+ },
  webfontloader: {
   google: {
     families: ['Roboto:300,400,700'] //Loads Lato font with weights 400 and 700
@@ -55,7 +57,7 @@ module.exports = {
     '@nuxtjs/pwa',
     'nuxt-material-design-icons',
     'nuxt-webfontloader',
-
+    '@nuxtjs/proxy'
 
   ],
   /*
