@@ -1,0 +1,98 @@
+{
+  "_from": "github:gick/vue-circular-count-down-timer",
+  "_id": "vue-circular-count-down-timer@1.0.3",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/vue-circular-count-down-timer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "github:gick/vue-circular-count-down-timer",
+    "rawSpec": "github:gick/vue-circular-count-down-timer",
+    "saveSpec": "github:gick/vue-circular-count-down-timer",
+    "fetchSpec": null,
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:gick/vue-circular-count-down-timer#1b4e0ef37736ff0d9179c9df04a82e3b3e9e47aa",
+  "_spec": "github:gick/vue-circular-count-down-timer",
+  "_where": "/home/gick/personalDev/geekQuiz",
+  "author": {
+    "name": "AzizAhmad Noorzaie",
+    "email": "aanoorzaie@gmail.com"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "bugs": {
+    "url": "https://github.com/noorzaie/vue-circular-count-down-timer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "core-js": "^2.6.5",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "deprecated": false,
+  "description": "This is a count down timer for Vue js framework. This library supports two types of timers: 1. Timer mode: Timer based on hour, minute and second. 2. Single mode: Timber based on second (single circle without hours and minutes).",
+  "devDependencies": {},
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "homepage": "https://github.com/noorzaie/vue-circular-count-down-timer#readme",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "javascript",
+    "timer",
+    "countdown",
+    "circular"
+  ],
+  "license": "MIT",
+  "main": "./dist/vue-count-down-timer.common.js",
+  "name": "vue-circular-count-down-timer",
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noorzaie/vue-circular-count-down-timer.git"
+  },
+  "scripts": {
+    "build": "vue-cli-service build",
+    "install": "vue-cli-service build --target lib --name vue-count-down-timer ./src/components/index.js",
+    "lint": "vue-cli-service lint",
+    "serve": "vue-cli-service serve"
+  },
+  "version": "1.0.3"
+}
