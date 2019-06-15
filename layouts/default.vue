@@ -8,7 +8,9 @@
       <div class="navbar-brand">
         <div class="navbar-item has-text-white-ter"> (unfair) Geek Quiz</div>
       </div>
-    </nav>
+          <nuxt-link class="navbar-item" to="/">The Quizz</nuxt-link>
+          <nuxt-link class="navbar-item" to="/inspire">High Scores</nuxt-link>
+      </nav>
 
 
 

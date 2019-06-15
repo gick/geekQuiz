@@ -11,48 +11,39 @@
       </div>
     </div>
 
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-parent">
-        <div class="tile is-parent">
-          <div class="tile is-8 is-child">
-            <Question v-show="started" v-if="getQuestion" :question="getQuestion" :class="anim"></Question>
-            <b-message
-              v-else
-              title="Full run success"
-              type="is-success"
-              aria-close-label="Close message"
-            >You completed a full run, congratulation!</b-message>
-          </div>
-          <div class="tile is-child">
-            <div class="columns is-vcentered is-gapless">
-              <div class="column is-10">
-                <CountDown @finish="endRun" v-show="started" ref="countdown"></CountDown>
-              </div>
-              <div class="column">
-                <div :class="'tile is-vertical ' + scoreanim">
-                  <div v-show="gain>0" class="tile is-child win">
-                    <p>+ {{gain}}</p>
-                  </div>
-                  <div v-show="loss>0" class="tile is-child lose">
-                    <p>- {{loss}}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="columns is-centered is-vcentered is-gapless multiline is-mobile">
+      <div class="column is-7">
+        <Question v-show="started" v-if="getQuestion" :question="getQuestion" :class="anim"></Question>
+        <b-message
+          v-else
+          title="Full run success"
+          type="is-success"
+          aria-close-label="Close message"
+        >You completed a full run, congratulation!</b-message>
+      </div>
+
+      <CountDown class="column is-7" @finish="endRun" v-show="started" ref="countdown"></CountDown>
+
+      <div :class="scoreanim">
+        <div v-show="gain" class="win">
+          <p>+ {{gain}}</p>
+        </div>
+        <div v-show="loss" class="lose">
+          <p>- {{loss}}</p>
         </div>
       </div>
     </div>
     <div :class="'columns is-centered is-8 ' + showMessage">
-        <b-message title="You reached a new level" type="is-success">
-        Congratulation, you reached level {{difficulty + 1}}!
-        </b-message>
+      <b-message
+        title="You reached a new level"
+        type="is-success"
+      >Congratulation, you reached level {{difficulty + 1}}! Your pause score is restarted!</b-message>
     </div>
   </div>
 </template>
 <style>
-.hide{
-  display: none!important;
+.hide {
+  display: none !important;
 }
 .anim {
   animation-duration: 0.5s;
@@ -77,7 +68,7 @@ import Welcome from "~/components/Welcome";
 import Question from "~/components/Question";
 import CountDown from "~/components/CountDown";
 import EndGame from "~/components/EndGame";
-import { mapMutations } from "vuex";
+import { mapMutations, mapState } from "vuex";
 import { mapGetters } from "vuex";
 import { setTimeout } from "timers";
 
@@ -87,7 +78,7 @@ export default {
     return {
       showEnd: false,
       started: false,
-      showMessage:'hide',
+      showMessage: "hide",
       q: null,
       anim: "",
       countDownClass: "countDown",
@@ -98,7 +89,9 @@ export default {
     };
   },
   mounted() {
+    this.$root.$off("set-pause");
     this.$root.$off("welcome-close");
+    this.$root.$on("set-pause", this.pauseCounter);
     this.$root.$on("welcome-close", this.firstRun);
     this.$root.$off("question-done");
     this.$root.$off("new-run");
@@ -111,51 +104,86 @@ export default {
     CountDown,
     EndGame
   },
-  watch:{
-    difficulty:function(v){
-      if(v>0){
-        this.showMessage='animated zoomIn'
-        setTimeout(()=>{this.showMessage='animated zoomOut'},3500)
-        setTimeout(()=>{this.showMessage='hide'},4500)
+  watch: {
+    resetPause: function(v) {
+      if (v == 0) return;
+      this.restartPauseTime();
+    },
+    difficulty: function(v) {
+      if (v > 0) {
+        this.showMessage = "animated zoomIn";
+        setTimeout(() => {
+          this.showMessage = "animated zoomOut";
+        }, 3500);
+        setTimeout(() => {
+          this.showMessage = "hide";
+        }, 4500);
       }
     }
   },
   computed: {
+    ...mapState([
+      "runTime",
+      "pauseTime",
+      "resetPauseTime",
+      "currentPauseTime",
+      "difficulty",
+      "paused"
+    ]),
     ...mapGetters(["getQuestion", "getDone"]),
-    difficulty() {
-      let diff = Math.floor(this.getDone.length / 5);
-      if (diff > 2) {
-        diff = 2;
-      }
-      return diff;
+    resetPause() {
+      let pause = Math.floor(this.getDone.length / this.resetPauseTime);
+      return pause;
     }
   },
   methods: {
-    ...mapMutations(["shuffle", "restart"]),
+    pauseCounter() {
+      // this.$toast.global.my_error()
+      if (this.currentPauseTime >= this.pauseTime) {
+        console.log("d");
+        this.$notification.open({
+          duration: 2000,
+          message: `You already used your pause options!`,
+          position: "is-bottom",
+          type: "is-danger",
+          hasIcon: true
+        });
+        return;
+      }
+      this.updatePauseTime();
+      this.$refs.countdown.pause();
+    },
+    ...mapMutations([
+      "shuffle",
+      "restart",
+      "updatePauseTime",
+      "restartPauseTime"
+    ]),
     newQuestion() {
       this.shuffle();
     },
     newRun() {
-      this.$axios.post('/api/start')
+      this.$axios.post("/api/start");
       this.restart();
       this.showEnd = false;
       this.started = true;
-      this.$refs.countdown.start()
-      this.$refs.countdown.resetTime(30);
+      this.$refs.countdown.start();
+      this.$refs.countdown.resetTime(this.runTime);
     },
     firstRun() {
-      this.$axios.post('/api/start')
+      this.$axios.post("/api/start");
       this.started = true;
-      this.$refs.countdown.resetTime(30);
-      this.$refs.countdown.start()
+      this.$refs.countdown.resetTime(this.runTime);
+      this.$refs.countdown.start();
     },
     endRun() {
       this.started = false;
       this.showEnd = true;
     },
     update(val) {
+      console.log(this);
       this.anim = "";
-
+      this.$refs.countdown.start();
       this.getQuestion.done = true;
       setTimeout(() => {
         this.anim = "animated flip anim";

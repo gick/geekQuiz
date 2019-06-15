@@ -6,7 +6,9 @@
             <Checkbox :response='response' v-for="response in question.r" v-bind:key="response.label"></Checkbox>
           </div>
           <div class="column centered">
-          <b-button @click="checkScore" type="is-dark">Answer</b-button>
+          <b-button ref="button" @click="checkScore" type="is-dark">Answer</b-button>
+          <b-button :disabled='!pauseAllowed && !paused' ref="button" @click="setPause" type="is-dark">Pause</b-button>
+
         </div>
         </article>
       </div>
@@ -31,12 +33,26 @@
 </style>
 <script>
 import Checkbox from './Checkbox'
+import {mapGetters, mapState} from 'vuex'
 export default {
+  data(){
+    return {inpause:false}
+  },
   props:['question'],
   components:{
     Checkbox
   },
+  computed:{
+        ...mapGetters(['pauseAllowed']),
+        ...mapState(['paused'])
+  },
+  mounted(){
+  }
+  ,
   methods:{
+    setPause(){
+      this.$store.commit('setPause',true)
+    },
     checkScore(){
       this.$axios.post('/api/question',{question:this.question})
       let gain=0

@@ -991,5 +991,149 @@
     ],
     "difficulty": 1,
     "done": false
+  },
+  {
+    "q": "For sale : baby shoes, never worn.",
+    "r": [
+      {
+        "label": "Is an example of very short story.",
+        "correct": true,
+        "gain": 4,
+        "loss": 1
+      },
+      {
+        "label": "Is attributed to Hemingway.",
+        "correct": true,
+        "gain": 6,
+        "loss": 1
+      },
+      {
+        "label": "Contains all the alphabet letters.",
+        "correct": false,
+        "gain": 3,
+        "loss": 4
+      }
+    ],
+    "difficulty": 1,
+    "done": false
+  },
+  {
+    "q": "Which one are US writer?",
+    "r": [
+      {
+        "label": "Hemingway",
+        "correct": true,
+        "gain": 3,
+        "loss": 1
+      },
+      {
+        "label": "Lovecraft",
+        "correct": true,
+        "gain": 4,
+        "loss": 1
+      },
+      {
+        "label": "Tolkien",
+        "correct": false,
+        "gain": 3,
+        "loss": 3
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "How many unique letters are there in this sentence? ",
+    "r": [
+      {
+        "label": "14",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "15",
+        "correct": true,
+        "gain": 6,
+        "loss": 1
+      },
+      {
+        "label": "16",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "Six times six times two is",
+    "r": [
+      {
+        "label": "64",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      },
+      {
+        "label": "72",
+        "correct": true,
+        "gain": 5,
+        "loss": 3
+      },
+      {
+        "label": "92",
+        "correct": false,
+        "gain": 1,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "Mushroom belongs to the Plantea kingdom  ",
+    "r": [
+      {
+        "label": "Sure thing",
+        "correct": false,
+        "gain": 1,
+        "loss": 3
+      },
+      {
+        "label": "That's wrong",
+        "correct": true,
+        "gain": 5,
+        "loss": 1
+      }
+    ],
+    "difficulty": 0,
+    "done": false
+  },
+  {
+    "q": "Division between Shia and Sunni Islam originates from :",
+    "r": [
+      {
+        "label": "The successor of Mahomet",
+        "correct": true,
+        "gain": 3,
+        "loss": 2
+      },
+      {
+        "label": "The nature of God",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      },
+      {
+        "label": "The holiness of Jesus",
+        "correct": false,
+        "gain": 0,
+        "loss": 5
+      }
+    ],
+    "difficulty": 0,
+    "done": false
   }
 ]

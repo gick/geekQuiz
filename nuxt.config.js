@@ -4,6 +4,17 @@ module.exports = {
   /*
   ** Headers of the page
   */
+ vue: {
+  config: {
+   productionTip: true,
+   devtools: true,
+   devServer: {
+    proxy: 'http://localhost:8000'
+  }
+
+  },
+
+},
 
  webfontloader: {
   google: {
@@ -55,15 +66,21 @@ module.exports = {
     '@nuxtjs/pwa',
     'nuxt-material-design-icons',
     'nuxt-webfontloader',
-    '@nuxtjs/proxy'
-
+    '@nuxtjs/proxy',
   ],
+
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
   },
+  
+    proxy: {
+      // Simple proxy
+      '/api': 'http://localhost:8000',
+      },
+  
   /*
   ** Build configuration
   */

@@ -1,9 +1,24 @@
 <template>
-  <section class="section">
-    <h2 class="title is-3 has-text-grey">"Just start  <b-icon
-      icon="rocket"
-      size="is-large"
-    />"</h2>
-    <h3 class="subtitle is-6 has-text-grey">Author: <a href="https://github.com/anteriovieira">Antério Vieira</a></h3>
-  </section>
+<div class="columns is-mobile is-centered">
+  <div style="margin-top:70px" class="column is-half">
+        <b-message type="is-info" title="Best scores" :closable="false">
+            <ul style="text-align:center;margin-left:10px;">
+                <li v-for="score in scores"><b> {{score.name}}</b> reached score : <b> {{score.score}} </b>on {{score.date}}</li>
+            </ul>
+        </b-message>
+  </div>
+</div>
 </template>
+<script>
+export default{
+  data(){
+    return {scores:{}}
+  },
+  mounted(){
+    this.$axios.get('/api/score')
+    .then(function(resp){
+      this.scores=resp.data.sort((x,y)=>x.score-y.score)
+    }.bind(this))
+ }
+}
+</script>

@@ -21,20 +21,24 @@
 }
 </style>
 <script>
+import { mapState } from 'vuex';
 export default {
   data() {
-    return { countDownClass: "countDown", opacity: 0,paused:true };
+    return { countDownClass: "countDown", opacity: 0 };
+  },
+  computed:{
+    ...mapState(['runTime','paused'])
   },
   methods: {
     endRun(){
       console.log('end run')
       this.$emit('finish')
-      this.paused=true
+      this.$store.commit('setPause',true)
        },
     updateValue(val){
         let afterUpdate=this.$refs.countdown.value + val
-        if(afterUpdate>30){
-          this.$refs.countdown.resetTime(30)
+        if(afterUpdate>this.runTime){
+          this.$refs.countdown.resetTime(this.runTime)
           return
         }
         this.$refs.countdown.updateTime(val)
@@ -42,8 +46,11 @@ export default {
     resetTime(val){
       this.$refs.countdown.resetTime(val)
     },
+    pause(){
+      this.$store.commit('setPause',true)
+    },
     start(){
-      this.paused=false
+      this.$store.commit('setPause',false)
     },
     countDownUpdate(v) {
       this.opacity = 1 / (v.value + 1);
