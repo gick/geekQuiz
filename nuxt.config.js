@@ -75,12 +75,7 @@ module.exports = {
   */
   axios: {
   },
-  
-    proxy: {
-      // Simple proxy
-      '/api': 'http://localhost:8000',
-      },
-  
+    
   /*
   ** Build configuration
   */
